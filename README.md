@@ -31,6 +31,9 @@ To help researchers quickly figure out this promising topic and benefit the futu
 We will continue to maintain and update this curated list of related papers and resources in this repository.
 </p>
 
+<p align="center">
+  <img src="agentcommunication.pdf" width="900"/>
+</p>
 
 <hr/>
 
