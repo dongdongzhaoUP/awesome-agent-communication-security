@@ -5,13 +5,13 @@ A curated collection of research and techniques on securing agent communication 
 </b></p>
 
 <p align="center">
-  <a href="https://github.com/Xuzhenhua55/awesome-llm-copyright-protection">
+  <a href="https://github.com/theshi-1128/awesome-agent-communication-security">
     <img src="https://awesome.re/badge.svg" alt="Awesome"/>
   </a>
-  <img src="https://img.shields.io/github/last-commit/Xuzhenhua55/awesome-llm-copyright-protection?color=green" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/last-commit/theshi-1128/awesome-agent-communication-security?color=green" alt="Last Commit"/>
   <img src="https://img.shields.io/badge/PRs-Welcome-red" alt="PRs Welcome"/>
-  <img src="https://img.shields.io/github/stars/Xuzhenhua55/awesome-llm-copyright-protection?color=yellow" alt="Stars"/>
-  <img src="https://img.shields.io/github/forks/Xuzhenhua55/awesome-llm-copyright-protection?color=lightblue" alt="Forks"/>
+  <img src="https://img.shields.io/github/stars/theshi-1128/awesome-agent-communication-security?color=yellow" alt="Stars"/>
+  <img src="https://img.shields.io/github/forks/theshi-1128/awesome-agent-communication-security?color=lightblue" alt="Forks"/>
 </p>
 
 <hr/>
