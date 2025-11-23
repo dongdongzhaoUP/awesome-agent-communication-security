@@ -1,1 +1,1 @@
-# awesome-agent-communication-security
+# Awesome Agent Communication Security
