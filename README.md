@@ -31,40 +31,6 @@ To help researchers quickly figure out this promising topic and benefit the futu
 We will continue to maintain and update this curated list of related papers and resources in this repository.
 </p>
 
-<hr/>
-
-<h2>📖 Documentation</h2>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <h3>📄 Survey Paper</h3>
-        <p><b><a href="https://arxiv.org/abs/2508.11548" target="_blank">Copyright Protection for Large Language Models: A Survey of Methods, Challenges, and Trends</a></b></p>
-        <p><code>arXiv:2508.11548</code></p>
-        <p><i>Comprehensive academic survey covering LLM copyright protection techniques</i></p>
-      </td>
-      <td align="center" width="50%">
-        <h3>🌐 Interactive Website</h3>
-        <p><b><a href="https://xuzhenhua55.github.io/awesome-llm-copyright-protection/" target="_blank">View Full Documentation & Papers</a></b></p>
-        <p><code>GitHub Pages</code></p>
-        <p><i>Interactive platform with organized papers, code links, and resources</i></p>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<p align="justify">
-This project is a website version of our arXiv paper <a href="https://arxiv.org/abs/2508.11548" target="_blank">"Copyright Protection for Large Language Models: A Survey of Methods, Challenges, and Trends"</a>, aiming to provide a more interactive and accessible platform for researchers and practitioners in the field of LLM copyright protection. We begin with a comprehensive preliminary section that introduces essential background knowledge for understanding various LLM IP protection methods. We provide updated definitions of key concepts such as model watermarking and model fingerprinting in the context of 2025, enabling newcomers to clearly distinguish between these often-confused concepts.
-</p>
-
-<p align="justify">
-Our ultimate goal is to present a comprehensive pipeline of copyright protection methods for large language models. From contemporary model fingerprint definitions to fingerprint embedding (and extraction) techniques, and from fingerprint transfer to removal strategies, we provide an end-to-end overview of the entire process.
-</p>
-
-<p align="justify">
-🌟 This website serves as a valuable resource for researchers and practitioners, providing quick access to paper references, code links, and future resources for paper interpretation and analysis.
-</p>
 
 <hr/>
 
