@@ -1,7 +1,7 @@
 <h1 align="center">🚀 Awesome Agent Communication Security</h1>
 
 <p align="center"><b>
-A curated collection of research and techniques for protecting the intellectual property of Large Language Models (LLMs), including watermarking, fingerprinting, and more.
+A curated collection of research and techniques on securing agent communication in Large Language Model (LLM)–based agent systems, including protocols, security risks, defense countermeasures, and more.
 </b></p>
 
 <p align="center">
