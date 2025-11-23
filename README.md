@@ -137,7 +137,7 @@ We will continue to maintain and update this curated list of related papers and 
   <th style="text-align:center;">🔵 L1 — Data Transmission Layer</th>
   <td>
     <div><b>Risk:</b> <a href="collection/paper&report/user-agent-interaction/risks/risks-from-L1.md">Risks-from-L1</a></div>
-    <div style="border-top: 1px solid #30363d; margin: 4px 0;"></div>
+    <hr>
     <div><b>Defense:</b> <a href="collection/paper&report/user-agent-interaction/defenses/defenses-on-L1.md">Defenses-on-L1</a></div>
   </td>
   <td>
