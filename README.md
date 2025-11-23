@@ -68,35 +68,20 @@ We will continue to maintain and update this curated list of related papers and 
   </thead>
 
   <tbody>
-    <!-- Protocol row -->
-    <tr>
-      <th style="text-align:center;">Protocol</th>
-      <td><a href="collection/paper&report/user-agent-interaction/protocols/user-agent-interaction-protocols.md">User-Agent-Interaction-Protocols</a></td>
-      <td>
-        <a href="collection/paper&report/agent-agent-communication/protocols/cs-based-communication-protocols.md">CS-based</a>,
-        <a href="collection/paper&report/agent-agent-communication/protocols/p2p-based-communication-protocols.md">P2P-based</a>,
-        <a href="collection/paper&report/agent-agent-communication/protocols/hybrid-communication-protocols.md">Hybrid</a>,
-        <a href="collection/paper&report/agent-agent-communication/protocols/other-communication-protocols.md">Others</a>
-      </td>
-      <td><a href="collection/paper&report/agent-environment-communication/protocols/agent-environment-communication-protocols.md">Agent-Environment-Communication-Protocols</a></td>
-    </tr>
 
 <!-- L1 -->
 <tr>
   <th style="text-align:center;">🔵 L1 — Data Transmission Layer</th>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/user-agent-interaction/risks/risks-from-L1.md">Risks-from-L1</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/user-agent-interaction/defenses/defenses-on-L1.md">Defenses-on-L1</a></div>
   </td>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-agent-communication/risks/risks-from-L1.md">Risks-from-L1</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-agent-communication/defenses/defenses-on-L1.md">Defenses-on-L1</a></div>
   </td>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-environment-communication/risks/risks-from-L1.md">Risks-from-L1</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-environment-communication/defenses/defenses-on-L1.md">Defenses-on-L1</a></div>
   </td>
 </tr>
@@ -105,18 +90,25 @@ We will continue to maintain and update this curated list of related papers and 
 <tr>
   <th style="text-align:center;">🟣 L2 — Interaction Protocol Layer</th>
   <td>
+    <div><b>📡 Protocols: </b><a href="collection/paper&report/user-agent-interaction/protocols/user-agent-interaction-protocols.md">User-Agent-Interaction-Protocols</a></div>
     <div><b>⚠️ </b> <a href="collection/paper&report/user-agent-interaction/risks/risks-from-L2.md">Risks-from-L2</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/user-agent-interaction/defenses/defenses-on-L2.md">Defenses-on-L2</a></div>
   </td>
+
   <td>
+    <div><b>📡 Protocols: </b>
+      <a href="collection/paper&report/agent-agent-communication/protocols/cs-based-communication-protocols.md">CS-based</a>,
+      <a href="collection/paper&report/agent-agent-communication/protocols/p2p-based-communication-protocols.md">P2P-based</a>,
+      <a href="collection/paper&report/agent-agent-communication/protocols/hybrid-communication-protocols.md">Hybrid</a>,
+      <a href="collection/paper&report/agent-agent-communication/protocols/other-communication-protocols.md">Others</a>
+    </div>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-agent-communication/risks/risks-from-L2.md">Risks-from-L2</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-agent-communication/defenses/defenses-on-L2.md">Defenses-on-L2</a></div>
   </td>
+
   <td>
+    <div><b>📡 Protocols: </b><a href="collection/paper&report/agent-environment-communication/protocols/agent-environment-communication-protocols.md">Agent-Environment-Communication-Protocols</a></div>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-environment-communication/risks/risks-from-L2.md">Risks-from-L2</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-environment-communication/defenses/defenses-on-L2.md">Defenses-on-L2</a></div>
   </td>
 </tr>
@@ -126,25 +118,20 @@ We will continue to maintain and update this curated list of related papers and 
   <th style="text-align:center;">🔶 L3 — Semantic Interpretation Layer</th>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/user-agent-interaction/risks/risks-from-L3.md">Risks-from-L3</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/user-agent-interaction/defenses/defenses-on-L3.md">Defenses-on-L3</a></div>
   </td>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-agent-communication/risks/risks-from-L3.md">Risks-from-L3</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-agent-communication/defenses/defenses-on-L3.md">Defenses-on-L3</a></div>
   </td>
   <td>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-environment-communication/risks/risks-from-L3.md">Risks-from-L3</a></div>
-    <br>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-environment-communication/defenses/defenses-on-L3.md">Defenses-on-L3</a></div>
   </td>
 </tr>
 
-
   </tbody>
 </table>
-
 
 
 
