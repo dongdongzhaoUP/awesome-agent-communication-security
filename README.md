@@ -37,39 +37,39 @@ We will continue to maintain and update this curated list of related papers and 
 
 <hr/>
 
-<h2>🗂️ Project Structure</h2>
-
-<div align="center">
-  <table>
-    <tr>
-      <td width="100%">
-        <pre>
-📚 <b>Preliminary</b>
-   └─ Background Knowledge & Definitions
-
-🔍 <b>Model Fingerprinting</b>
-   ├─ <b>Non-invasive Fingerprinting</b>
-   │    ├─ Parameter and Representation Based
-   │    │    ├─ Parameter Space
-   │    │    └─ Representation Features
-   │    ├─ Semantic Feature Extraction
-   │    └─ Adversarial Example-Based
-   │
-   └─ <b>Invasive Fingerprinting</b>
-        ├─ Weight Watermark as Fingerprint
-        └─ Backdoor Watermark as Fingerprint
-
-🔄 <b>Fingerprint Transfer</b>
-   └─ Cross-model Fingerprint Migration
-
-🧹 <b>Fingerprint Removal</b>
-   └─ Detection & Elimination Techniques
-        </pre>
-      </td>
-    </tr>
-  </table>
-</div>
-
+## Collections
+- [Book](collection/book.md) (3)
+- [Competition](collection/competition.md) (5)
+- [Leaderboard](collection/leaderboard.md) (3)
+- [Toolkit](collection/toolkit.md) (10)
+- [Survey](collection/survey.md) (35)
+- Paper (1467)
+    - A. Safety (806)
+        - [A0. General](collection/paper/safety/general.md) (22)
+        - [A1. Jailbreak](collection/paper/safety/jailbreak.md) (340)
+        - [A2. Alignment](collection/paper/safety/alignment.md) (89)
+        - [A3. Deepfake](collection/paper/safety/deepfake.md) (64)
+        - [A4. Ethics](collection/paper/safety/ethics.md) (5)
+        - [A5. Fairness](collection/paper/safety/fairness.md) (54)
+        - [A6. Hallucination](collection/paper/safety/hallucination.md) (109)
+        - [A7. Prompt Injection](collection/paper/safety/prompt_injection.md) (49)
+        - [A8. Toxicity](collection/paper/safety/toxicity.md) (74)
+    - B. Security (220)
+        - [B0. General](collection/paper/security/general.md) (13)
+        - [B1. Adversarial Examples](collection/paper/security/adversarial_examples.md) (89)
+        - [B2. Poison & Backdoor](collection/paper/security/poison_&_backdoor.md) (105)
+        - [B3. System](collection/paper/security/system.md) (13)
+    - C. Privacy (441)
+        - [C0. General](collection/paper/privacy/general.md) (31)
+        - [C1. Contamination](collection/paper/privacy/contamination.md) (13)
+        - [C2. Copyright](collection/paper/privacy/copyright.md) (156)
+        - [C3. Data Reconstruction](collection/paper/privacy/data_reconstruction.md) (48)
+        - [C4. Membership Inference Attacks](collection/paper/privacy/membership_inference_attacks.md) (39)
+        - [C5. Model Extraction](collection/paper/privacy/model_extraction.md) (12)
+        - [C6. Privacy-Preserving Computation](collection/paper/privacy/privacy-preserving_computation.md) (88)
+        - [C7. Property Inference Attacks](collection/paper/privacy/property_inference_attacks.md) (3)
+        - [C8. Side-Channel](collection/paper/privacy/side-channel.md) (5)
+        - [C9. Unlearning](collection/paper/privacy/unlearning.md) (46)
 <hr/>
 
 <h2>🌟 Features</h2>
