@@ -54,20 +54,42 @@ We will continue to maintain and update this curated list of related papers and 
 ## 📘 Collections
 - [Survey](collection/survey.md)
 - Paper&Report
-    - A. User-Agent Interaction
+    - A. User-Agent-Interaction
         - Protocols
             - [User-Agent-Interaction-Protocols](collection/paper&report/user-agent-interaction/protocols/user-agent-interaction-protocols.md)
         - Risks
+            - [Risks-from-L1](collection/paper&report/user-agent-interaction/risks/risks-from-L1.md)
+            - [Risks-from-L2](collection/paper&report/user-agent-interaction/risks/risks-from-L2.md)
+            - [Risks-from-L3](collection/paper&report/user-agent-interaction/risks/risks-from-L3.md)
         - Defenses
-    - B. Agent-Agent Communication
+            - [Defenses-on-L1](collection/paper&report/user-agent-interaction/defenses/defenses-on-L1.md)
+            - [Defenses-on-L2](collection/paper&report/user-agent-interaction/defenses/defenses-on-L2.md)
+            - [Defenses-on-L3](collection/paper&report/user-agent-interaction/defenses/defenses-on-L3.md)
+    - B. Agent-Agent-Communication
         - Protocols
+            - [CS-based-Communication-Protocols](collection/paper&report/agent-agent-communication/protocols/cs-based-communication-protocols.md)
+            - [P2P-based-Communication-Protocols](collection/paper&report/agent-agent-communication/protocols/p2p-based-communication-protocols.md)
+            - [Hybrid-Communication-Protocols](collection/paper&report/agent-agent-communication/protocols/hybrid-communication-protocols.md)
+            - [Other-Communication-Protocols](collection/paper&report/agent-agent-communication/protocols/other-communication-protocols.md)
         - Risks
+            - [Risks-from-L1](collection/paper&report/agent-agent-communication/risks/risks-from-L1.md)
+            - [Risks-from-L2](collection/paper&report/agent-agent-communication/risks/risks-from-L2.md)
+            - [Risks-from-L3](collection/paper&report/agent-agent-communication/risks/risks-from-L3.md)
         - Defenses
-    - C. Agent-Environment Communication
+            - [Defenses-on-L1](collection/paper&report/agent-agent-communication/defenses/defenses-on-L1.md)
+            - [Defenses-on-L2](collection/paper&report/agent-agent-communication/defenses/defenses-on-L2.md)
+            - [Defenses-on-L3](collection/paper&report/agent-agent-communication/defenses/defenses-on-L3.md)
+    - C. Agent-Environment-Communication
         - Protocols
+            - [Agent-Environment-Communication-Protocols](collection/paper&report/agent-environment-communication/protocols/agent-environment-communication-protocols.md)
         - Risks
+            - [Risks-from-L1](collection/paper&report/agent-environment-communication/risks/risks-from-L1.md)
+            - [Risks-from-L2](collection/paper&report/agent-environment-communication/risks/risks-from-L2.md)
+            - [Risks-from-L3](collection/paper&report/agent-environment-communication/risks/risks-from-L3.md)
         - Defenses
-        - [C9. Unlearning](collection/paper/privacy/unlearning.md) (46)
+            - [Defenses-on-L1](collection/paper&report/agent-environment-communication/defenses/defenses-on-L1.md)
+            - [Defenses-on-L2](collection/paper&report/agent-environment-communication/defenses/defenses-on-L2.md)
+            - [Defenses-on-L3](collection/paper&report/agent-environment-communication/defenses/defenses-on-L3.md)
 <hr/>
 
 <h2>🌟 Features</h2>
