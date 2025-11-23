@@ -23,19 +23,21 @@ In recent years, Large-Language-Model-driven AI agents have exhibited unpreceden
 </p>
 
 <p align="justify">
-To help researchers quickly figure out this promising topic and benefit the future agent communication development, this paper presents a comprehensive survey of agent communication security. 
-  
-  - More precisely, we present the first clear definition of agent communication. 
-  
-  - Besides, we propose a framework that categorizes agent communication into three classes and uses a three-layered communication architecture to illustrate how each class works.
-    
-  - Next, for each communication class, we dissect related communication protocols and analyze the security risks, illustrating which communication layer the risks arise from.
-    
-  - Then, we provide an outlook on the possible defense countermeasures for each risk.
-    
-  - In addition, we conduct experiments using MCP and A2A to help readers better understand the novel vulnerabilities brought by agent communication.
-    
-  - Finally, we discuss open issues and future directions in this promising research field. 
+
+To help researchers rapidly grasp this emerging yet critical topic and advance future agent communication development, this paper presents a comprehensive survey of agent communication security:
+
+- **Clear Conceptualization:** We provide the first precise and unified definition of agent communication.
+
+- **Systematic Taxonomy:** We introduce a framework that classifies agent communication into three categories and describe a three-layer communication architecture to explain how each category operates.
+
+- **Risk Analysis:** For each communication class, we dissect representative communication protocols and analyze the associated security risks, indicating the communication layer in which each risk originates.
+
+- **Defensive Outlook:** We discuss potential defense strategies tailored to each identified risk.
+
+- **Empirical Demonstration:** We further conduct experiments on MCP and A2A to reveal novel vulnerabilities arising in real agent communication systems.
+
+- **Future Directions:** Finally, we outline open challenges and promising research opportunities in this rapidly evolving field.
+
 </p>
 
 
