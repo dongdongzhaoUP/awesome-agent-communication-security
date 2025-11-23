@@ -50,7 +50,7 @@ We will continue to maintain and update this curated list of related papers and 
 </p>
 
 <hr/>
-
+<!--
 ## 📘 Collections
 - [Survey](collection/survey.md)
 - Paper&Report
@@ -91,6 +91,94 @@ We will continue to maintain and update this curated list of related papers and 
             - [Defenses-on-L2](collection/paper&report/agent-environment-communication/defenses/defenses-on-L2.md)
             - [Defenses-on-L3](collection/paper&report/agent-environment-communication/defenses/defenses-on-L3.md)
 <hr/>
+-->
+
+
+## 🧩 Communication–Layer Matrix Overview
+
+<table>
+<tr>
+  <th align="center">Layer ↓ / Mode →</th>
+  <th align="center">User ↔ Agent</th>
+  <th align="center">Agent ↔ Agent</th>
+  <th align="center">Agent ↔ Environment</th>
+</tr>
+
+<tr>
+  <td><b>🔵 L1 — Transmission Layer</b></td>
+  <td>
+    <b>Protocols</b><br>
+    • <a href="">User-Agent-Interaction-Protocols</a><br><br>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L1</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L1</a>
+  </td>
+  <td>
+    <b>Protocols</b><br>
+    • CS / P2P / Hybrid / Other<br><br>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L1</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L1</a>
+  </td>
+  <td>
+    <b>Protocols</b><br>
+    • <a href="">Agent-Environment-Communication-Protocols</a><br><br>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L1</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L1</a>
+  </td>
+</tr>
+
+<tr>
+  <td><b>🟣 L2 — Semantics Layer</b></td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L2</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L2</a>
+  </td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L2</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L2</a>
+  </td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L2</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L2</a>
+  </td>
+</tr>
+
+<tr>
+  <td><b>🔶 L3 — Orchestration Layer</b></td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L3</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L3</a>
+  </td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L3</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L3</a>
+  </td>
+  <td>
+    <b>Risks</b><br>
+    • <a href="">Risks-from-L3</a><br><br>
+    <b>Defenses</b><br>
+    • <a href="">Defenses-on-L3</a>
+  </td>
+</tr>
+
+</table>
+
+
 
 <h2>🌟 Features</h2>
 
