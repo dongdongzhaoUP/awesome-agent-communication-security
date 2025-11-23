@@ -106,10 +106,14 @@ Our ultimate goal is to present a comprehensive pipeline of copyright protection
 <h2>🌟 Features</h2>
 
 <ul>
-  <li><b>Comprehensive Survey:</b> Covers both classic and cutting-edge LLM copyright protection techniques.</li>
-  <li><b>Systematic Categorization:</b> Clear taxonomy of fingerprinting and watermarking methods.</li>
+  <li><b>Comprehensive Survey:</b> Presents the first systematic and theoretically grounded survey of agent communication security, spanning communication architectures, protocol designs, risk taxonomies, and defense methodologies.</li>
+  <li><b>Systematic Categorization:</b> Formalizes a unified classification of agent communication modes and proposes a three-layered communication framework that rigorously maps communication processes to their corresponding security risks.</li>
+  <li><b>Actively Updated:</b> Tracks the latest protocols, security analyses, and defense techniques, supporting reproducible research and fostering future studies in secure agent communication.</li>
   <li><b>Open Source & Community Driven:</b> Contributions and suggestions are welcome!</li>
 </ul>
+
+
+
 
 <hr/>
 
