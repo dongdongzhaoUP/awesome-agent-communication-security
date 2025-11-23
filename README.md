@@ -51,7 +51,7 @@ We will continue to maintain and update this curated list of related papers and 
 
 <hr/>
 
-## Collections
+## 📘 Collections
 - [Book](collection/book.md) (3)
 - [Competition](collection/competition.md) (5)
 - [Leaderboard](collection/leaderboard.md) (3)
