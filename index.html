@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A Survey of LLM-Driven AI Agent Communication Security</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A survey of LLM-driven AI agent communication: protocols, security risks, and defense countermeasures." />
+  <meta name="author" content="Dezhang Kong, Shi Lin, et al." />
+
+  <!-- Social preview (optional, you can adjust URLs) -->
+  <meta property="og:title" content="A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures" />
+  <meta property="og:description" content="Protocols, security risks, and defense countermeasures for LLM-driven AI agent communication." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="agentcommunication.png" />
+
+  <style>
+    :root {
+      --bg-color: #0b1020;
+      --bg-elevated: #121829;
+      --accent: #4f8cff;
+      --accent-soft: rgba(79, 140, 255, 0.15);
+      --accent-strong: #ffb347;
+      --text-main: #f5f7ff;
+      --text-muted: #b3b9d4;
+      --border-subtle: #22263a;
+      --code-bg: #111827;
+      --max-width: 960px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, -system-ui,
+                   "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top, #151b38 0, #050816 45%, #020008 100%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-subtle);
+      background: linear-gradient(135deg, rgba(79,140,255,0.08), rgba(255,179,71,0.05));
+      backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.7rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .nav-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--text-muted);
+    }
+
+    .nav-title span.logo {
+      font-size: 1.1rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.9rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      padding: 0.1rem 0;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+      border-bottom-color: var(--accent);
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(1.9rem, 3.4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-badges img {
+      height: 26px;
+    }
+
+    .hero-tags {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: rgba(6,11,40,0.8);
+      color: var(--text-muted);
+    }
+
+    .hero-figure {
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.06);
+      background: radial-gradient(circle at top left, #1f2937 0, #020617 40%);
+      padding: 0.85rem;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+
+    .hero-figure img {
+      width: 100%;
+      display: block;
+      border-radius: 0.75rem;
+    }
+
+    section {
+      margin-top: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    section h2 span.emoji {
+      font-size: 1.4rem;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .card {
+      background: rgba(10,16,40,0.88);
+      border-radius: 1rem;
+      padding: 1.3rem 1.3rem 1.1rem;
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.7);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr; /* 单列 */
+      gap: 1.3rem;
+    }
+
+    @media (max-width: 800px) {
+      .grid-2 {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.7rem;
+      font-size: 0.88rem;
+    }
+
+    .matrix-table th,
+    .matrix-table td {
+      border: 1px solid var(--border-subtle);
+      padding: 0.55rem 0.5rem;
+      text-align: center;
+    }
+
+    .matrix-table th {
+      background: rgba(17,24,59,0.8);
+      font-weight: 600;
+    }
+
+    .matrix-layer {
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.16rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      font-size: 0.78rem;
+      margin: 0.08rem;
+      background: rgba(15,23,42,0.9);
+      color: var(--text-muted);
+    }
+
+    .pill span.dot {
+      font-size: 0.85rem;
+      margin-right: 0.25rem;
+    }
+
+    ul.feature-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.8rem 0 0;
+    }
+
+    ul.feature-list li {
+      margin-bottom: 0.55rem;
+      font-size: 0.93rem;
+      color: var(--text-muted);
+    }
+
+    ul.feature-list b {
+      color: var(--text-main);
+    }
+
+    code {
+      font-family: "JetBrains Mono", "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 0.85rem;
+    }
+
+    pre {
+      margin: 0.7rem 0;
+      padding: 0.9rem 1rem;
+      border-radius: 0.7rem;
+      background: var(--code-bg);
+      border: 1px solid rgba(148,163,184,0.35);
+      overflow-x: auto;
+      font-size: 0.83rem;
+    }
+
+    .citation-note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .contact a {
+      color: var(--accent-strong);
+    }
+
+    footer {
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="nav-title">
+      <span class="logo">🤖</span>
+      <span>Agent Communication Security Survey</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#framework">Framework</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#resources">Resources</a>
+      <a href="#citation">Citation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+<section class="hero" id="overview">
+  <div class="hero-title">
+    A Survey of LLM-Driven AI Agent Communication: Protocols, Security Risks, and Defense Countermeasures
+  </div>
+<!-- 👇 这里插入作者区 -->
+<section id="authors" style="margin-top: 1.4rem; margin-bottom:1.4rem;">
+  <div style="font-size:1.05rem; color:var(--text-muted); margin-top:0.4rem; line-height:1.6;">
+
+    <!-- 作者列表：只有共同一作和通讯作者带单位序号 -->
+    <div style="margin-bottom:0.4rem;">
+      <b>Dezhang Kong<sup>†1</sup></b>,
+      <b>Shi Lin<sup>†2</sup></b>,
+      Zhenhua Xu,
+      Zhebo Wang,
+      Minghao Li,
+      Yufeng Li,
+      Yilun Zhang,
+      Hujin Peng,
+      Xiang Chen,
+      Zeyang Sha,
+      Yuyuan Li,
+      Changting Lin,
+      Xun Wang,
+      Xuan Liu,
+      Ningyu Zhang,
+      Chaochao Chen,
+      Chunming Wu,
+      Muhammad Khurram Khan,
+      <b>Meng Han<sup>*1</sup></b>
+    </div>
+
+    <div style="font-size:0.9rem; opacity:0.85; line-height:1.55; margin-top:0.7rem;">
+        <b><sup>1</sup> Zhejiang University, <sup>2</sup> Zhejiang Gongshang University</b>, Chongqing University, East China Normal University,
+      Purdue University, Changsha University of Science and Technology,
+      Ant Group, Hangzhou Dianzi University, Yangzhou University,
+      King Saud University
+    </div>
+
+    <!-- 说明 -->
+    <div style="font-size:0.8rem; opacity:0.7; margin-top:0.5rem;">
+      <sup>†</sup>Equal contribution.
+      <sup>*</sup>Corresponding author.
+    </div>
+
+  </div>
+</section>
+
+  <div class="hero-tags">
+      <span class="tag">LLM-Driven AI Agents</span>
+      <span class="tag">Agent Communication Protocols</span>
+      <span class="tag">Security Risks</span>
+      <span class="tag">Defense Countermeasures</span>
+  </div>
+
+  <!-- Badges -->
+  <div class="hero-badges">
+    <a href="https://arxiv.org/abs/2506.19676" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/arXiv-2506.19676-b31b1b.svg?logo=arxiv" alt="arXiv:2506.19676" />
+    </a>
+    <a href="https://github.com/theshi-1128/awesome-agent-communication-security" target="_blank" rel="noopener noreferrer">
+      <img src="https://img.shields.io/badge/GitHub-Project-black?logo=github" alt="GitHub Project" />
+    </a>
+    <img src="https://img.shields.io/github/stars/theshi-1128/awesome-agent-communication-security?style=social" alt="GitHub stars" />
+  </div>
+
+  <!-- Illustration -->
+  <figure class="hero-figure">
+    <img src="agentcommunication.png" alt="Agent Communication Security Framework" />
+  </figure>
+</section>
+
+
+
+
+
+  <!-- Abstract & Framework -->
+  <section id="framework">
+    <div class="grid-2">
+      <!-- Abstract -->
+      <div>
+        <h2><span class="emoji">📝</span>Abstract</h2>
+        <div class="card">
+          <p>
+            LLM-driven AI agents are rapidly evolving from isolated systems into
+            <b>interconnected, communicating entities</b> that collaborate with users, other agents,
+            and external tools. Many organizations have recently proposed new communication protocols
+            (e.g., Anthropic's MCP and Google's A2A), accelerating this transformation.
+          </p>
+          <p>
+            However, these emerging communication pathways introduce <b>novel and severe security hazards</b>,
+            including semantic manipulation, protocol exploitation, cross-agent misinformation cascades, and
+            unsafe delegation — risks that go beyond traditional single-LLM vulnerabilities.
+          </p>
+          <p>
+            To address this, our paper presents the <b>first comprehensive survey of agent communication security</b>.
+            We unify the definition of agent communication, introduce a <b>3-class × 3-layer architecture</b>,
+            analyze representative protocols, security risks and propose structured defense methodologies, conduct
+            empirical studies on MCP and A2A, and outline open challenges for future research.
+          </p>
+        </div>
+      </div>
+
+      <!-- Matrix -->
+      <div>
+        <h2><span class="emoji">🧩</span>Communication–Layer Matrix</h2>
+        <div class="card">
+          <p>
+            We model agent communication across <b>three classes</b> and <b>three security-relevant layers</b>:
+          </p>
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Layers ↓ / Classes →</th>
+                <th>User ↔ Agent</th>
+                <th>Agent ↔ Agent</th>
+                <th>Agent ↔ Environment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="matrix-layer">🔵 L1 — Data Transmission</td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="matrix-layer">🟣 L2 — Interaction Protocols</td>
+                <td>
+                  <span class="pill"><span class="dot">📡</span>Protocols</span>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">📡</span>CS / P2P / Hybrid / Others</span><br/>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">📡</span>Protocols</span>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="matrix-layer">🔶 L3 — Semantic Interpretation</td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+                <td>
+                  <span class="pill"><span class="dot">⚠️</span>Risks</span>
+                  <span class="pill"><span class="dot">🛡️</span>Defenses</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.7rem;">
+            Each cell corresponds to detailed collections of <b>protocols</b>, <b>risks</b>, and <b>defenses</b>
+            curated in the GitHub repository.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section id="highlights">
+    <h2><span class="emoji">🌟</span>Highlights</h2>
+    <div class="card">
+      <ul class="feature-list">
+        <li>
+          <b>🧭 Clear Conceptualization:</b>
+          Provides the first precise and unified definition of <b>agent communication</b>, consolidating fragmented views in the literature.
+        </li>
+        <li>
+          <b>🏗 Systematic Taxonomy:</b>
+          Proposes a <b>three-class, three-layer</b> framework that rigorously maps communication processes to their corresponding security risks.
+        </li>
+        <li>
+          <b>⚠️ Risk Analysis:</b>
+          Dissects representative protocols (e.g., MCP, A2A, CS-based and P2P-based schemes) and locates risks at <b>L1 (Data Transmission)</b>,
+          <b>L2 (Interaction Protocol)</b>, and <b>L3 (Semantic Interpretation)</b>.
+        </li>
+        <li>
+          <b>🛡️ Defensive Outlook:</b>
+          Summarizes defense methodologies including content filtering, multi-agent consensus, architectural isolation, trusted routing,
+          and semantic integrity verification.
+        </li>
+        <li>
+          <b>🔍 Empirical Demonstration:</b>
+          Conducts experiments on real-world communication frameworks (MCP and A2A), revealing <b>novel vulnerabilities</b>
+          in practical agent systems.
+        </li>
+        <li>
+          <b>🚀 Future Directions:</b>
+          Highlights open challenges such as multi-agent hallucination cascades, security-aware protocol co-design, and formal guarantees
+          for semantic integrity in agent communication.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section id="resources">
+    <h2><span class="emoji">📦</span>Code & Resources</h2>
+    <div class="card">
+      <p>
+        This work is accompanied by an actively maintained, curated repository:
+      </p>
+      <p>
+        <b>GitHub:</b>
+        <a href="https://github.com/theshi-1128/awesome-agent-communication-security" target="_blank" rel="noopener noreferrer">
+          https://github.com/theshi-1128/awesome-agent-communication-security
+        </a>
+      </p>
+      <p>
+        The repository includes:
+      </p>
+      <ul class="feature-list">
+        <li>🧩 Categorized collections of <b>communication protocols</b> (user–agent, agent–agent, agent–environment)</li>
+        <li>⚠️ Detailed <b>risk taxonomies</b> and attack examples across L1–L3</li>
+        <li>🛡️ <b>Defense strategies</b> and architectural patterns</li>
+        <li>🧪 Experiment setups and notes for <b>MCP</b> and <b>A2A</b></li>
+        <li>📚 An evolving list of <b>related papers and reports</b></li>
+      </ul>
+      <p style="margin-top:0.7rem;">
+        We plan to keep tracking the latest protocols, security analyses, and defense techniques to support
+        <b>reproducible research</b> and foster future work on secure agent communication.
+      </p>
+    </div>
+  </section>
+
+  <!-- Citation -->
+  <section id="citation">
+    <h2><span class="emoji">📖</span>Citation</h2>
+    <div class="card">
+      <p>
+        If you find this work useful in your research, please consider starring the repository ⭐ and citing:
+      </p>
+      <pre><code>@article{kong2025survey,
+  title={A survey of llm-driven ai agent communication: Protocols, security risks, and defense countermeasures},
+  author={Kong, Dezhang and Lin, Shi and Xu, Zhenhua and Wang, Zhebo and Li, Minghao and Li, Yufeng and Zhang, Yilun and Peng, Hujin and Sha, Zeyang and Li, Yuyuan and others},
+  journal={arXiv preprint arXiv:2506.19676},
+  year={2025}
+}</code></pre>
+      <p class="citation-note">
+        You can also find the latest version of the paper on
+        <a href="https://arxiv.org/abs/2506.19676" target="_blank" rel="noopener noreferrer">arXiv:2506.19676</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2><span class="emoji">🤝</span>Contact & Contributions</h2>
+    <div class="card">
+      <p class="contact">
+        We welcome contributions, feedback, and collaboration opportunities!
+      </p>
+      <p class="contact">
+        💬 Issues & PRs:
+        <a href="https://github.com/theshi-1128/awesome-agent-communication-security/issues" target="_blank" rel="noopener noreferrer">
+          GitHub Issues
+        </a>
+      </p>
+      <p class="contact">
+        📧 Email:
+        <a href="mailto:linshizjsu@gmail.com">linshizjsu@gmail.com</a>,
+        <a href="mailto:kdz@zju.edu.cn">kdz@zju.edu.cn</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Agent Communication Security Survey. Built for researchers and practitioners in secure LLM-based agent systems.
+  </footer>
+</main>
+
+</body>
+</html>
