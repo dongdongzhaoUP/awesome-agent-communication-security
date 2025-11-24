@@ -4,9 +4,13 @@
 A curated collection of research and techniques on securing agent communication in Large Language Model (LLM)–based agent systems, including protocols, security risks, defense countermeasures, and more.
 </b></p>
 
+
 <p align="center">
   <a href="https://github.com/theshi-1128/awesome-agent-communication-security">
     <img src="https://awesome.re/badge.svg" alt="Awesome"/>
+  </a>
+  <a href="https://arxiv.org/abs/2506.19676">
+    <img src="https://img.shields.io/badge/arXiv-paper-red.svg" alt="arXiv: paper"/>
   </a>
   <img src="https://img.shields.io/github/last-commit/theshi-1128/awesome-agent-communication-security?color=green" alt="Last Commit"/>
   <img src="https://img.shields.io/badge/PRs-Welcome-red" alt="PRs Welcome"/>
