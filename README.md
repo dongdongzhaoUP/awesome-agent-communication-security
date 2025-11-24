@@ -107,7 +107,7 @@ We will continue to maintain and update this curated list of related papers and 
   </td>
 
   <td>
-    <div><b>📡 Protocols: </b><a href="collection/paper&report/agent-environment-communication/protocols/agent-environment-communication-protocols.md">Agent-Environment-Communication-Protocols</a></div>
+    <div><b>📡 </b><a href="collection/paper&report/agent-environment-communication/protocols/agent-environment-communication-protocols.md">Protocols</a></div>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-environment-communication/risks/risks-from-L2.md">Risks (attacks)</a></div>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-environment-communication/defenses/defenses-on-L2.md">Defenses</a></div>
   </td>
