@@ -15,4 +15,7 @@
 ## D5: Defense for Registration Pollution
 
 
+## D6: Defense for SEO Poisoning
+
+
 ## D7: Task Lifecycle Monitoring
