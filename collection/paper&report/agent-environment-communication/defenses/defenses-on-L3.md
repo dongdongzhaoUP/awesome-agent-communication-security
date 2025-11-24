@@ -6,3 +6,5 @@
 - [2025/06] **[Your Agent Can Defend Itself against Backdoor Attacks](https://arxiv.org/abs/2506.08336)**
 - [2025/06] **[DRIFT: Dynamic Rule-Based Defense with Injection Isolation for Securing LLM Agents](https://arxiv.org/abs/2506.12104)**
 - [2025/03] **[AgentSafe: Safeguarding Large Language Model-based Multi-agent Systems via Hierarchical Data Management](https://arxiv.org/abs/2503.04392)**
+
+## D3: Defense for Real-world Damage
