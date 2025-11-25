@@ -101,10 +101,7 @@ We will continue to maintain and update this curated list of related papers and 
 
   <td>
     <div><b>📡 Protocols: </b>
-      <a href="collection/paper&report/agent-agent-communication/protocols/cs-based-communication-protocols.md">CS-based</a>,
-      <a href="collection/paper&report/agent-agent-communication/protocols/p2p-based-communication-protocols.md">P2P-based</a>,
-      <a href="collection/paper&report/agent-agent-communication/protocols/hybrid-communication-protocols.md">Hybrid</a>,
-      <a href="collection/paper&report/agent-agent-communication/protocols/other-communication-protocols.md">Others</a>
+      <a href="collection/paper&report/agent-agent-communication/protocols/">Protocols</a>,
     </div>
     <div><b>⚠️ </b> <a href="collection/paper&report/agent-agent-communication/risks/risks-from-L2.md">Risks (attacks)</a></div>
     <div><b>🛡️ </b> <a href="collection/paper&report/agent-agent-communication/defenses/defenses-on-L2.md">Defenses</a></div>
