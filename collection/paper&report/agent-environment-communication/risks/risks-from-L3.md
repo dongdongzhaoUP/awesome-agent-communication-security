@@ -1,5 +1,5 @@
 # Risks from L3
-
+**Note**: Due to the forward-looking nature of this paper, the risks we mentioned include both **the proposed ones** and **potential directions that have not been studied**. As a result, some risks may lack a concrete list of papers, we hope our paper can inspire these directions.
 - [2025/09] **[A survey on the memory mechanism of large language model based agents](https://dl.acm.org/doi/abs/10.1145/3748302)**
 - [2025/10] **[A practical memory injection attack against llm agents.](https://arxiv.org/abs/2503.03704)**
 - [2024] **[Agentpoison: Red-teaming llm agents via poisoning memory or knowledge bases.](https://proceedings.neurips.cc/paper_files/paper/2024/hash/eb113910e9c3f6242541c1652e30dfd6-Abstract-Conference.html)**
