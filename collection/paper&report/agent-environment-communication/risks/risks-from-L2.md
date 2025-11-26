@@ -1,5 +1,5 @@
 # Risks from L2
-**Note**: Due to the forward-looking nature of this paper, the risks and defenses we mentioned include both **the proposed ones** and **potential directions that have not been studied**. As a result, some risks/defenses may lack a concrete list of papers, we hope our paper can inspire these directions.
+**Note**: Due to the forward-looking nature of this paper, the risks we mentioned include both **the proposed ones** and **potential directions that have not been studied**. As a result, some risks may lack a concrete list of papers, we hope our paper can inspire these directions.
 
 - [2025/10] **[Modelcontext protocol (mcp): Landscape, security threats, and future research directions](https://arxiv.org/abs/2503.23278)**
 - [2025/06] **[We should identify and mitigate third-party safety risks in mcp-powered agent systems. ](https://arxiv.org/abs/2506.13666)**
