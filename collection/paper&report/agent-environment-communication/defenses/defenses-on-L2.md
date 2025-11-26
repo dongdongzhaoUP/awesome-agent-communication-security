@@ -20,3 +20,4 @@
 - [2025/08] **[MCP-Guard: A Defense Framework for Model Context Protocol Integrity in Large Language Model Applications](https://arxiv.org/abs/2508.10991)**
 - [2025/11] **[TPS-Bench: Evaluating AI Agents' Tool Planning \& Scheduling Abilities in Compounding Tasks](https://arxiv.org/abs/2511.01527)**
 - [2025/10] **[MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in LLM Agents](https://arxiv.org/abs/2510.15994)**
+- [2025/09] **[[MCP Security Bench (MSB): Benchmarking Attacks Against Model Context Protocol in LLM Agents](https://aclanthology.org/2025.emnlp-main.62/)**
