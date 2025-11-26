@@ -1,5 +1,5 @@
 # Risks from L3
-
+**Note**: Due to the forward-looking nature of this paper, the risks we mentioned include both **the proposed ones** and **potential directions that have not been studied**. As a result, some risks may lack a concrete list of papers, we hope our paper can inspire these directions.
 ## R1: MAS Pollution
 - [2024/01] **[Psysafe: A comprehensive framework for psychological-based attack, defense, and evaluation of multi-agent system safety](https://arxiv.org/abs/2401.11880)**
 - [2024/07] **[Flooding spread of manipulated knowledge in llm-based multi-agent communities](https://arxiv.org/abs/2407.07791)**
