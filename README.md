@@ -32,7 +32,7 @@ To help researchers rapidly grasp this emerging yet critical topic and advance f
 
 - 🧭 **Clear Conceptualization:** We provide the first precise and unified definition of agent communication.
 
-- 🏗️ **Systematic Taxonomy:** We introduce a framework that classifies agent communication into three categories and describe a three-layer communication architecture to explain how each category operates.
+- 🏗️ **Systematic Taxonomy:** We introduce a unique 3*3 framework that classifies agent communication into three categories and describe a three-layer communication architecture to explain how each category operates.
 
 - 🏗️ **Protocols Classification:** WFor each communication class, we dissect representative communication protocols and classify them according to their features.
 
